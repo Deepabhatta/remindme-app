@@ -17,7 +17,10 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.remindme.app",
       "infoPlist": {
-        "UIBackgroundModes": ["fetch", "remote-notification"],
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ],
         "NSUserNotificationUsageDescription": "RemindMe uses notifications to alert you when your reminder is due, even when the app is closed."
       }
     },
@@ -49,6 +52,11 @@
           "sounds": []
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e2f2b5ae-37c3-4947-bc77-b0142a5ec7f4"
+      }
+    }
   }
 }
