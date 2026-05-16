@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "RemindMe",
+    "slug": "remindme-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "remindme",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A14"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.remindme.app",
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "remote-notification"],
+        "NSUserNotificationUsageDescription": "RemindMe uses notifications to alert you when your reminder is due, even when the app is closed."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#5B5BD6"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.remindme.app",
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.USE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#5B5BD6",
+          "defaultChannel": "reminders",
+          "sounds": []
+        }
+      ]
+    ]
+  }
+}
